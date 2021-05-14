@@ -12,19 +12,19 @@ public class MernisServiceAdapter implements ICustomerCheckService {
 		
 		
 		KPSPublicSoapProxy proxy = new KPSPublicSoapProxy();
-		boolean result;
-	
-		try {
-			return result = proxy.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()),customer.getFirstName().toUpperCase(),customer.getLastName().toUpperCase(), customer.getDateOfBirth().getYear());
-		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return false;
-		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return false;
-		}		
+		boolean result = false;
+		
+		try 
+		{
+			result = proxy.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()),customer.getFirstName().toUpperCase(),customer.getLastName().toUpperCase(), customer.getDateOfBirth().getYear());		
+		} 
+		catch (Exception e) 
+		{
+			System.out.println("Not a valid person");
+		}
+		
+		return result;
+				
 		
 	}
 
