@@ -14,5 +14,7 @@
 	<classpathentry kind="lib" path="C:/Users/Rumeysa&apos;s Monster/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar"/>
 	<classpathentry kind="lib" path="src/Errors/activation.jar"/>
 	<classpathentry kind="lib" path="src/Errors/javax.mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rumeysa&apos;s Monster/git/mernis/Starbucks_Mernis/src/Errors/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rumeysa&apos;s Monster/git/mernis/Starbucks_Mernis/src/Errors/javax.mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
